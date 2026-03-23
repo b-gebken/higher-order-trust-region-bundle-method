@@ -27,7 +27,9 @@ The correspondence between paper examples and folders is as follows:<br/>
 | Ex. 5.4/Fig. 4(b) | Example_LW2019_eigval_local |
 | Ex. 5.5/Fig. 4(c) | Example_LW2019_84_local |
 
-The trust-region subproblems are solved via the Matlab interface _mexIPOPT_ (https://github.com/ebertolazzi/mexIPOPT) of _IPOPT_ (https://github.com/coin-or/Ipopt). The figures are saved via _export_fig_ (https://github.com/altmany/export_fig).
+The trust-region subproblems are solved via the Matlab interface _mexIPOPT_ (https://github.com/ebertolazzi/mexIPOPT) of _IPOPT_ (https://github.com/coin-or/Ipopt). The runtimes reported in the papers were achieved with a slight modification to _mexIPOPT_, where the check whether Matlab or Octave is used is disabled. See "Algorithms/solve_subproblem_IPOPT.m" for details.
+
+The figures are saved via _export_fig_ (https://github.com/altmany/export_fig).
 
 <h1>Acknowledgements</h1>
 This research was funded by Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – Projektnummer 545166481.
