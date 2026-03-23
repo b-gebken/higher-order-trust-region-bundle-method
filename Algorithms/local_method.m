@@ -17,12 +17,12 @@ Inputs:
         sigma: Approximation parameter for Alg. 4.1
         disp_flag: Flag for displaying information of iterations
         memory_max_size: Maximum size of memory of past iterates for the
-            bundle initialization in Alg. 4.1  (cf. Remark 4.3(a)).
+            bundle initialization in Alg. 4.1  (cf. Remark 4.2(a)).
         local_options: A struct with fields:
             kappa: Rate parameter in (4.2)
             eps_thr: Lower bound for eps (cf. Section 6)
             j_thr: For detecting unsuccessful runs of Alg. 4.2 (cf.
-                Subsection 5.2) 
+                Subsection 5.1) 
             act_thr: Tolerance for activity of trust-region constraint
             init_N_sample: Number of randomly sampled points for the
                 initialization of Alg. 4.1. The first point is always the
@@ -42,7 +42,7 @@ Output:
     result_local_method: A struct with fields:
         x_arr: Sequence (x^j)_j in Alg. 4.2
         f_arr: Sequence (f(x^j))_j
-        eps_arr: The trust-region for each j (as in (4.2)) 
+        eps_arr: The trust-region for each j (as in (4.1)) 
         act_arr: The relative activity of the trust-region constraint
         mu_arr: The multiplier of the trust-region constraint in subproblem
             (3.5) for each j
@@ -53,7 +53,7 @@ Output:
         eval_counter: Number of oracle calls for each order
         eval_counter_arr: Number of oracle calls for each order that was
             required for each j. (The last row is eval_counter.)
-        success_flag: Returns the success of the run (cf. Subsection 5.2)
+        success_flag: Returns the success of the run (cf. Subsection 5.1)
 %} 
 
 function result_local_method = local_method(x1,eps1,problem_data,algo_options)
