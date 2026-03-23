@@ -1,6 +1,6 @@
 <h1>Higher-order trust-region bundle method</h1>
 
-An implementation of the trust-region bundle method using higher-order cutting-plane models for the solution of nonsmooth, nonconvex optimization problems. It was used for the numerical experiments in [GU2026a] and [GU2026b].
+An implementation of a trust-region bundle method using higher-order cutting-plane models for the solution of nonsmooth, nonconvex optimization problems. It was used for the numerical experiments in [GU2026a] and [GU2026b].
 
 [GU2026a] Gebken, Ulbrich (2026): Superlinear convergence in nonsmooth optimization via higher-order cutting-plane models (To be submitted)<br/>
 [GU2026b] Gebken, Ulbrich (2026): Enclosing minima in nonsmooth optimization via trust regions of higher-order cutting-plane models (To be submitted)<br/>
