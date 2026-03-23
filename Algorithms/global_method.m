@@ -15,7 +15,7 @@ Inputs:
         p: Order of growth of the objective function around the minimum
         disp_flag: Flag for displaying information of iterations
         memory_max_size: Maximum size of memory of past iterates for the
-            bundle initialization in Alg. 4.1  (cf. Remark 4.3(a)).
+            bundle initialization in Alg. 4.1  (cf. [GU2026a], Remark 4.2(a)).
         local_flag: Flag for whether the local superlinear method from
             [GU2026a] should be applied after every outer j-iteration
         global_options: A struct with fields:
@@ -44,7 +44,7 @@ Output:
     result_global_method: A struct with fields:
         local_success_flag: Whether the trust-region constraint in the
             local method was active from iteration j_thr onwards (see
-            [GU2026a], Subsection 5.2)
+            [GU2026a], Subsection 5.1)
         best_f_val: Smallest objective value found in global and local
             phases
         best_x: Point corresponding to best_f_val
